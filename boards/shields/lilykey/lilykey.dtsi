@@ -1,4 +1,6 @@
-// lilykey.dtsi
+#include <dt-bindings/zmk/matrix_transform.h>
+#include <physical_layouts.dtsi>
+
 / {
     chosen {
         zmk,kscan = &kscan0;
@@ -45,5 +47,6 @@
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
         transform = <&default_transform>;
+        kscan = <&kscan0>;
     };
 };
