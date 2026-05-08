@@ -3,32 +3,34 @@
 
 / {
     chosen {
-        // Change &kscan to &kscan0 to match the label below
         zmk,kscan = &kscan0;
         zmk,matrix-transform = &default_transform;
+        zmk,physical-layout = &default_layout;
     };
 
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
-        diode-direction = "col2row";
         wakeup-source;
+        diode-direction = "row2col";
 
-        // Ensure you have Column GPIOs defined, or the build will fail again
+        // Define your 6 columns (XIAO D0 - D5)
         col-gpios
-            = <&xiao_d 0 GPIO_ACTIVE_HIGH>
-            , <&xiao_d 1 GPIO_ACTIVE_HIGH>
-            , <&xiao_d 2 GPIO_ACTIVE_HIGH>
-            , <&xiao_d 3 GPIO_ACTIVE_HIGH>
-            , <&xiao_d 4 GPIO_ACTIVE_HIGH>
-            , <&xiao_d 5 GPIO_ACTIVE_HIGH>
+            = <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&xiao_d 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&xiao_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
 
+        // Define your 5 rows (XIAO D10, D7, D8, D9, D6)
+        // Moved D6 to the end to avoid Blue LED priority issues
         row-gpios
-            = <&xiao_d  6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
-            , <&xiao_d  7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
-            , <&xiao_d  8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
-            , <&xiao_d  9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
-            , <&xiao_d 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
+            = <&xiao_d 10 GPIO_ACTIVE_HIGH> 
+            , <&xiao_d 7  GPIO_ACTIVE_HIGH>
+            , <&xiao_d 8  GPIO_ACTIVE_HIGH>
+            , <&xiao_d 9  GPIO_ACTIVE_HIGH>
+            , <&xiao_d 6  GPIO_ACTIVE_HIGH>
             ;
     };
 
