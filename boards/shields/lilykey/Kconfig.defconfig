@@ -1,0 +1,16 @@
+if SHIELD_LILYKEY_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "lilykey"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_LILYKEY_LEFT
+
+if SHIELD_LILYKEY_LEFT || SHIELD_LILYKEY_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif # SHIELD_LILYKEY_LEFT || SHIELD_LILYKEY_RIGHT

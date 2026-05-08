@@ -1,0 +1,60 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            // -----------------------------------------------
+            // | ESC  |  1  |  2  |  3  |  4  |  5  |
+            // | TAB  |  Q  |  W  |  E  |  R  |  T  |
+            // | CTRL |  A  |  S  |  D  |  F  |  G  |
+            // | SHFT |  Z  |  X  |  C  |  V  |  B  |
+            // | CTRL | ALT | GUI | SPC | LWR | LWR |
+
+            bindings = <
+&kp ESC   &kp N1   &kp N2   &kp N3   &kp N4   &kp N5
+&kp TAB   &kp Q    &kp W    &kp E    &kp R    &kp T
+&kp LCTRL &kp A    &kp S    &kp D    &kp F    &kp G
+&kp LSHFT &kp Z    &kp X    &kp C    &kp V    &kp B
+&kp LCTRL &kp LALT &kp LGUI &kp SPACE &mo 1   &mo 1
+            >;
+        };
+
+        lower_layer {
+            // -----------------------------------------------
+            // | TILD |  !  |  @  |  #  |  $  |  %  |
+            // | DEL  |  1  |  2  |  3  |  4  |  5  |
+            // |      |     |     | (   | )   |     |
+            // |      |     |     |     |     |     |
+            // |      |     |     |     |     | RSE |
+
+            bindings = <
+&kp TILDE  &kp EXCL &kp AT   &kp HASH &kp DLLR &kp PRCNT
+&kp DEL    &kp N1   &kp N2   &kp N3   &kp N4   &kp N5
+&trans     &trans   &trans   &kp LPAR &kp RPAR &trans
+&trans     &trans   &trans   &trans   &trans   &trans
+&trans     &trans   &trans   &trans   &trans   &mo 2
+            >;
+        };
+
+        raise_layer {
+            // -----------------------------------------------
+            // | F1  | F2  | F3  | F4  | F5  | F6  |
+            // | F7  | F8  | F9  | F10 | F11 | F12 |
+            // |     |     |     |     |     |     |
+            // |     |     |     |     |     |     |
+            // |     |     |     |     | LWR |     |
+
+            bindings = <
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6
+&kp F7  &kp F8  &kp F9  &kp F10 &kp F11 &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &mo 1   &trans
+            >;
+        };
+    };
+};

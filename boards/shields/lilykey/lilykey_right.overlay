@@ -1,0 +1,11 @@
+// lilykey_right.overlay
+#include "lilykey.dtsi"
+
+&default_transform {
+    col-offset = <6>;
+};
+
+&kscan0 {
+    // If your right side is wired identically to the left, 
+    // you don't need to redefine pins here; it inherits from .dtsi
+};

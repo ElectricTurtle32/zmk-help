@@ -1,0 +1,5 @@
+config SHIELD_LILYKEY_LEFT
+    def_bool $(shields_list_contains,lilykey_left)
+
+config SHIELD_LILYKEY_RIGHT
+    def_bool $(shields_list_contains,lilykey_right)
