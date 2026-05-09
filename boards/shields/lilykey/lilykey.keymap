@@ -7,38 +7,38 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            // Every key is 'q'
+            // Every key is 'q' (6 columns for right side)
             
             bindings = <
-&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q       &kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
-&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q       &kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
-&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q       &kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
-&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q       &kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
-&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q       &kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
+&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
+&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
+&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
+&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
+&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
             >;
         };
 
         lower_layer {
-            // All 'q'
+            // All 'q' (6 columns for right side)
             
             bindings = <
-&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q      &kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
-&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q      &kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
-&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q      &kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
-&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q      &kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
-&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q      &kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
+&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
+&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
+&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
+&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
+&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
             >;
         };
 
         raise_layer {
-            // All 'q'
+            // All 'q' (6 columns for right side)
             
             bindings = <
-&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q    &kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
-&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q    &kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
-&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q    &kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
-&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q    &kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
-&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q    &kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
+&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
+&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
+&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
+&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
+&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
             >;
         };
     };
