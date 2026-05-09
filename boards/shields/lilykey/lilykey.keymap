@@ -7,38 +7,38 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            // Every key is 'q' (6 columns for right side)
+            // Every key is 'w' (6 columns for right side)
             
             bindings = <
-&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
-&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
-&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
-&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
-&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
+&kp W &kp W &kp W &kp W &kp W &kp W
+&kp W &kp W &kp W &kp W &kp W &kp W
+&kp W &kp W &kp W &kp W &kp W &kp W
+&kp W &kp W &kp W &kp W &kp W &kp W
+&kp W &kp W &kp W &kp W &kp W &kp W
             >;
         };
 
         lower_layer {
-            // All 'q' (6 columns for right side)
+            // All 'w' (6 columns for right side)
             
             bindings = <
-&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
-&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
-&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
-&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
-&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
+&kp W &kp W &kp W &kp W &kp W &kp W
+&kp W &kp W &kp W &kp W &kp W &kp W
+&kp W &kp W &kp W &kp W &kp W &kp W
+&kp W &kp W &kp W &kp W &kp W &kp W
+&kp W &kp W &kp W &kp W &kp W &kp W
             >;
         };
 
         raise_layer {
-            // All 'q' (6 columns for right side)
+            // All 'w' (6 columns for right side)
             
             bindings = <
-&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
-&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
-&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
-&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
-&kp Q &kp Q &kp Q &kp Q &kp Q &kp Q
+&kp W &kp W &kp W &kp W &kp W &kp W
+&kp W &kp W &kp W &kp W &kp W &kp W
+&kp W &kp W &kp W &kp W &kp W &kp W
+&kp W &kp W &kp W &kp W &kp W &kp W
+&kp W &kp W &kp W &kp W &kp W &kp W
             >;
         };
     };
