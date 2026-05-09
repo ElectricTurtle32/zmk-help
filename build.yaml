@@ -1,5 +1,5 @@
 include:
   - board: xiao_ble
-    shield: lilykey_left
-  - board: xiao_ble
     shield: lilykey_right
+  - board: xiao_ble
+    shield: lilykey_left
